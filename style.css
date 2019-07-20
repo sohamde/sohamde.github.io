@@ -48,6 +48,11 @@ a:active {
 	   background-color: #606161;
 }
 
+.bibstyle {
+	font-size: 10px;
+	line-height: 130%;
+}
+
 .updates {
 	line-height: 180%
 }
