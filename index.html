@@ -111,7 +111,7 @@ We show that batch normalization biases deep residual networks towards shallow p
 } <br/>
 	</div></div>
 	<div id="gc19tldr" class="hidden"><br/>
-We analyze how neural network structure affects SGD convergence. Increased layer width decreases the variance of the stochastic gradients, improving SGD convergence. Increased network depth, on the other hand, increases the variance slowing down SGD. BatchNorm and skip connections helps reduce this training burden of very deep networks.
+At standard Gaussian initializations, we show that increased layer width improves and increased network depth hurts trainability of neural networks. Orthogonal initializations make the early training dynamics independent of depth, but is applicable only for linear or tanh networks. Finally, we show that the combination of batch normalization and skip connections enable us to train very deep networks in practice.
 	</div>
 	<br/><br/>
 	</td>
