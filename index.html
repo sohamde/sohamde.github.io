@@ -79,7 +79,7 @@ Full List: <a target="_blank" href="https://scholar.google.com/citations?hl=en&u
 } <br/>
 	</div></div>
 	<div id="nfnet21tldr" class="hidden"><br/>
-We propose signal propagation plots (SPPs) to characterize signal propagation on the forward pass in deep networks. Using SPPs, we show that a key benefit of BatchNorm is that it corrects for a mean-shift in the hidden activations that can arise with ReLU activations. We propose a modified version of Weight Standardization that can correct for this, and train normalizer-free ResNets to high accuracies.
+BatchNorm is a key component of most vision models, but it has many undesirable properties stemming from its dependence on the batch size and the fact that it introduces interactions between examples. We propose NFNets, a new family of ResNet models, that achieve state-of-the-art performance on ImageNet across a range of training latencies and is up to 8.7 times faster than EfficientNets, without any normalization layers.
 	</div>
 	<br/><br/>
 		
@@ -99,7 +99,7 @@ We propose signal propagation plots (SPPs) to characterize signal propagation on
 } <br/>
 	</div></div>
 	<div id="beasgd21tldr" class="hidden"><br/>
-We propose signal propagation plots (SPPs) to characterize signal propagation on the forward pass in deep networks. Using SPPs, we show that a key benefit of BatchNorm is that it corrects for a mean-shift in the hidden activations that can arise with ReLU activations. We propose a modified version of Weight Standardization that can correct for this, and train normalizer-free ResNets to high accuracies.
+We show that, when using small finite learning rates, the path taken by Random Shuffling SGD coincides with the path taken by gradient flow when minimizing a modified loss function. This modified loss function contains an implicit source of regularization which enhances the test accuracies achieved by deep networks on standard benchmarks.
 	</div>
 	<br/><br/>
 	
@@ -509,7 +509,7 @@ Advances over the centuries have greatly increased the degree to which humans ch
 </table> -->
 
 <hr/>
-Last Updated: September 25, 2020
+Last Updated: March 5, 2021
 
 </body>
 </html>
