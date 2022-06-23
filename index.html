@@ -51,7 +51,7 @@ London, UK, N1C 4DN<br/><br/>
 
 <br/><br/>
 I am a research scientist at <a href="https://deepmind.com/" target="_blank">DeepMind</a> in London, where I work on better understanding and improving large-scale deep learning.
-I currently focus on topics in optimization and initialization, and more recently have been working on privacy-preserving machine learning. Please feel free to drop me a line if you want to chat about any of these topics.
+I currently focus on topics in optimization and initialization, and more recently have been working on privacy-preserving machine learning. Feel free to drop me a line if you want to chat about any of these topics.
 <br/><br/>
 	
 I completed my PhD in 2018 at the <a href="https://www.cs.umd.edu/" target="_blank">University of Maryland</a>, where I was advised by <a href="https://www.cs.umd.edu/~nau/" target="_blank">Dana Nau</a> and <a href="http://www.cs.umd.edu/~tomg/" target="_blank">Tom Goldstein</a>.
@@ -60,6 +60,21 @@ I also worked on game-theoretic models of the evolution of human behavioral norm
 I completed my undergraduate degree from <a href="http://www.jaduniv.edu.in/" target="_blank">Jadavpur University</a>, Kolkata, India in 2013.
 I have previously interned at <a href="https://www.ttic.edu/" target="_blank">Toyota Technological Institute at Chicago (TTIC)</a>, <a href="http://research.ibm.com/labs/almaden/" target="_blank">IBM Research Almaden</a> and <a href="https://deepmind.com/" target="_blank">DeepMind</a>.
 
+<br/><br/>
+<h3>RECENT TALKS</h3>
+<br/><br/>
+<ul>
+	<li>
+		<span class="title">High-Accuracy Differentially Private Image Classification</span>: <a href="docs/dpsgd-talk.pdf" target="_blank">slides</a><br/>
+		At Google Brain, University College London, University of Maryland, SPML Seminar, Oracle Labs and IIT Kharagpur. (2022)
+		<br/><br/>
+		
+	<li>		
+		<span class="title">Normalizer-Free Networks</span>: <a href="docs/nfnets-talk.pdf" target="_blank">slides</a><br/>
+		At Google Brain, University College London, Swiss Federal Institute of Technology Lausanne (EPFL). (2021)
+		<br/><br/>
+</ul>
+	
 <br/><br/>
 <h3>SELECTED PAPERS</h3>
 Full List: <a target="_blank" href="https://scholar.google.com/citations?hl=en&user=lHf55pF3KVQC&view_op=list_works&sortby=pubdate">Google Scholar</a>
@@ -255,6 +270,7 @@ Neural net parameters can often be compressed down to just one single bit withou
 	</div>
 	<br/><br/>
 
+<!--
 	<li>
 	<span class="title">Automated Inference with Adaptive Batches</a></span><br/> 
 	<b>Soham De</b>, Abhay Yadav, David Jacobs, Tom Goldstein<br/>
@@ -276,6 +292,7 @@ Neural net parameters can often be compressed down to just one single bit withou
 We propose Big Batch SGD for automatically growing batch sizes by controlling the signal-to-noise ratio during SGD training. We show that increasing the batch size during training can generalize as well as small batches on neural networks, and allows for SGD to be fully automated using adaptive step size methods.
 	</div>
 	<br/><br/>
+-->
 
 <!-- 	<li>
 	<span class="title">The inevitability of ethnocentrism revisited: ethnocentrism diminishes as mobility increases</span><br/> 
@@ -302,242 +319,8 @@ Advances over the centuries have greatly increased the degree to which humans ch
 	<br/><br/> -->
 </ul>
 
-<!-- <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
-<tbody>
-
-	
-<tr>
-	<td width="20%" valign="top">
-	<img class="pubimage" src="./pubimages/skipInit.png">
-	</td>
-	<td width="80%" valign="top" class="text">
-	<span class="title">Batch Normalization Biases Deep Residual Networks Towards Shallow Paths</span><br/> 
-	<b>Soham De</b>, Sam Smith<br/>
-	Preprint<br/>
-	<a href="https://arxiv.org/pdf/2002.10444.pdf" target="_blank">paper</a> /
-	<a href="javascript:unhide('bn20bib');">bibtex</a> /
-	<a href="javascript:unhide('bn20tldr');">tl;dr</a>
-	<div id="bn20bib" class="hidden"><div class="bibstyle"><br/>
-@article{de2020batch, <br/>
-  title={Batch Normalization Biases Deep Residual Networks Towards Shallow Paths}, <br/>
-  author={De, Soham and Smith, Samuel L}, <br/>
-  journal={arXiv preprint arXiv:2002.10444}, <br/>
-  year={2020} <br/>
-} <br/>
-	</div></div>
-	<div id="bn20tldr" class="hidden"><br/>
-We show that batch normalization biases deep residual networks towards shallow paths with well-behaved gradients. This dramatically increases the largest trainable depth. We can recover this benefit with a simple change to the initialization scheme.
-	</div>
-	<br/><br/>
-	</td>
-</tr>
-	
-	
-<tr>
-	<td width="20%" valign="top">
-	<img class="pubimage" src="./pubimages/gradconf.png">
-	</td>
-	<td width="80%" valign="top" class="text">
-	<span class="title">The Impact of Neural Network Overparameterization on Gradient Confusion and Stochastic Gradient Descent</span><br/> 
-	Karthik A. Sankararaman*, <b>Soham De*</b>, Zheng Xu, W. Ronny Huang, Tom Goldstein<br/>
-	Preprint<br/>
-	<a href="https://arxiv.org/pdf/1904.06963.pdf" target="_blank">paper</a> /
-	<a href="javascript:unhide('gc19bib');">bibtex</a> /
-	<a href="javascript:unhide('gc19tldr');">tl;dr</a>
-	<div id="gc19bib" class="hidden"><div class="bibstyle"><br/>
-@article{sankararaman2019impact, <br/>
-  title={The Impact of Neural Network Overparameterization on Gradient Confusion and Stochastic Gradient Descent}, <br/>
-  author={Sankararaman, Karthik A and De, Soham and Xu, Zheng and Huang, W Ronny and Goldstein, Tom}, <br/>
-  journal={arXiv preprint arXiv:1904.06963}, <br/>
-  year={2019} <br/>
-} <br/>
-	</div></div>
-	<div id="gc19tldr" class="hidden"><br/>
-At standard Gaussian initializations, we show that increased layer width improves and increased network depth hurts trainability of neural networks. Orthogonal initializations make the early training dynamics independent of depth, but is applicable only for linear or tanh networks. Finally, we show that the combination of batch normalization and skip connections enable us to train very deep networks in practice.
-	</div>
-	<br/><br/>
-	</td>
-</tr>
-
-<tr>
-	<td width="20%" valign="top">
-	<img class="pubimage" src="./pubimages/llr.png">
-	</td>
-	<td width="80%" valign="top" class="text">
-	<span class="title">Adversarial Robustness through Local Linearization</span><br/> 
-	Chongli Qin, James Martens, Sven Gowal, Dilip Krishnan, Alhussein Fawzi, <b>Soham De</b>, Robert Stanforth, Pushmeet Kohli<br/>
-	NeurIPS 2019<br/>
-	<a href="https://arxiv.org/pdf/1907.02610.pdf" target="_blank">paper</a> /
-	<a href="javascript:unhide('llr19bib');">bibtex</a> /
-	<a href="javascript:unhide('llr19tldr');">tl;dr</a>
-	<div id="llr19bib" class="hidden"><div class="bibstyle"><br/>
-@article{qin2019adversarial, <br/>
-  title={Adversarial Robustness through Local Linearization}, <br/>
-  author={Qin, Chongli and Martens, James and Gowal, Sven and Krishnan, Dilip and Fawzi, Alhussein and De, Soham and Stanforth, Robert and Kohli, Pushmeet}, <br/>
-  journal={arXiv preprint arXiv:1907.02610}, <br/>
-  year={2019} <br/>
-} <br/>
-	</div></div>
-	<div id="llr19tldr" class="hidden"><br/>
-Adversarial training is an effective but computationally costly method for training neural nets that are robust against adversarial perturbations. We introduce a regularizer that achieves state-of-the-art adversarial accuracy results on CIFAR-10 and ImageNet classifiers, while being significantly faster than adversarial training.
-	</div>
-	<br/><br/>
-	</td>
-</tr>
-
-<tr>
-	<td width="20%" valign="top">
-	<img class="pubimage" src="./pubimages/tqn_mc.png">
-	</td>
-	<td width="80%" valign="top" class="text">
-	<span class="title">Training Quantized Nets: A Deeper Understanding</a></span><br/> 
-	Hao Li*, <b>Soham De*</b>, Zheng Xu, Christoph Studer, Hanan Samet, Tom Goldstein<br/>
-	NIPS 2017<br/>
-	<a href="https://arxiv.org/pdf/1706.02379.pdf" target="_blank">paper</a> /
-	<a href="docs/nips17_poster.pdf" target="_blank">poster</a> /
-	<a href="javascript:unhide('nips17bib');">bibtex</a> /
-	<a href="javascript:unhide('nips17tldr');">tl;dr</a>
-	<div id="nips17bib" class="hidden"><div class="bibstyle"><br/>
-@inproceedings{li2017training, <br/>
-  title={Training quantized nets: A deeper understanding}, <br/>
-  author={Li, Hao and De, Soham and Xu, Zheng and Studer, Christoph and Samet, Hanan and Goldstein, Tom}, <br/>
-  booktitle={Advances in Neural Information Processing Systems}, <br/>
-  pages={5811--5821}, <br/>
-  year={2017} <br/>
-} <br/>
-	</div></div>
-	<div id="nips17tldr" class="hidden"><br/>
-Neural net parameters can often be compressed down to just one single bit without a significant loss in network performance, yielding a huge reduction in model size and computational workload. We develop a theory of quantized nets, and explain the performance of algorithms for weight quantization.
-	</div>
-	<br/><br/>
-	</td>
-</tr>
-
-
-<tr>
-	<td width="20%" valign="top">
-	<img class="pubimage" src="./pubimages/bigbatch.png">
-	</td>
-	<td width="80%" valign="top" class="text">
-	<span class="title">Automated Inference with Adaptive Batches</a></span><br/> 
-	<b>Soham De</b>, Abhay Yadav, David Jacobs, Tom Goldstein<br/>
-	AISTATS 2017<br/>
-	<a href="docs/aistats17_paper.pdf" target="_blank">paper</a> /
-	<a href="docs/aistats17_slides.pdf" target="_blank">slides</a> /
-	<a href="javascript:unhide('aistats17bib');">bibtex</a> /
-	<a href="javascript:unhide('aistats17tldr');">tl;dr</a>
-	<div id="aistats17bib" class="hidden"><div class="bibstyle"><br/>
-@inproceedings{de2017automated, <br/>
-  title={Automated inference with adaptive batches}, <br/>
-  author={De, Soham and Yadav, Abhay and Jacobs, David and Goldstein, Tom}, <br/>
-  booktitle={Artificial Intelligence and Statistics}, <br/>
-  pages={1504--1513}, <br/>
-  year={2017} <br/>
-} <br/>
-	</div></div>
-	<div id="aistats17tldr" class="hidden"><br/>
-We propose Big Batch SGD for automatically growing batch sizes by controlling the signal-to-noise ratio during SGD training. We show that the large batches used can generalize as well as small batches, and allows for SGD to be fully automated using adaptive step size methods.
-	</div>
-	<br/><br/>
-	</td>
-</tr>
-
-
-<tr>
-	<td width="20%" valign="top">
-	<img class="pubimage" src="./pubimages/norm-change.png">
-	</td>
-	<td width="80%" valign="top" class="text">
-	<span class="title">Understanding Norm Change: An Evolutionary Game-Theoretic Study</a></span><br/> 
-	<b>Soham De</b>, Dana Nau, Michele Gelfand<br/>
-	AAMAS 2017<br/>
-	<a href="http://www.ifaamas.org/Proceedings/aamas2017/pdfs/p1433.pdf" target="_blank">paper</a> /
-	<a href="docs/aamas17_slides.pdf" target="_blank">slides</a> /
-	<a href="javascript:unhide('aamas17bib');">bibtex</a> /
-	<a href="javascript:unhide('aamas17tldr');">tl;dr</a>
-	<div id="aamas17bib" class="hidden"><div class="bibstyle"><br/>
-@inproceedings{de2017understanding, <br/>
-  title={Understanding norm change: An evolutionary game-theoretic approach}, <br/>
-  author={De, Soham and Nau, Dana S and Gelfand, Michele J}, <br/>
-  booktitle={Proceedings of the 16th Conference on Autonomous Agents and MultiAgent Systems}, <br/>
-  pages={1433--1441}, <br/>
-  year={2017}, <br/>
-  organization={International Foundation for Autonomous Agents and Multiagent Systems} <br/>
-} <br/>
-	</div></div>
-	<div id="aamas17tldr" class="hidden"><br/>
-Human societies around the world interact with each other by developing and maintaining social norms. Using an evolutionary game theoretic model, we study how norms change in a society, based on the idea that different strength of norms in societies translate to different game-theoretic interaction structures and incentives.
-	</div>
-	<br/><br/>
-	</td>
-</tr>
-
-
-<tr>
-	<td width="20%" valign="top">
-	<img class="pubimage" src="./pubimages/distributed.png">
-	</td>
-	<td width="80%" valign="top" class="text">
-	<span class="title">Efficient Distributed SGD with Variance Reduction</a></span><br/> 
-	<b>Soham De</b>, Tom Goldstein<br/>
-	ICDM 2016<br/>
-	<a href="https://arxiv.org/pdf/1512.02970.pdf" target="_blank">paper</a> /
-	<a href="docs/icdm16_slides.pdf" target="_blank">slides</a> /
-	<a href="javascript:unhide('icdm16bib');">bibtex</a> /
-	<a href="javascript:unhide('icdm16tldr');">tl;dr</a>
-	<div id="icdm16bib" class="hidden"><div class="bibstyle"><br/>
-@inproceedings{de2016efficient, <br/>
-  title={Efficient distributed SGD with variance reduction}, <br/>
-  author={De, Soham and Goldstein, Tom}, <br/>
-  booktitle={2016 IEEE 16th International Conference on Data Mining (ICDM)}, <br/>
-  pages={111--120}, <br/>
-  year={2016}, <br/>
-  organization={IEEE} <br/>
-} <br/>
-	</div></div>
-	<div id="icdm16tldr" class="hidden"><br/>
-We propose an optimization algorithm called CentralVR that reduces the variance of SGD gradients and scales linearly up to hundreds of distributed computing nodes. 
-	</div>
-	<br/><br/>
-	</td>
-</tr>
-
-
-<tr>
-	<td width="20%" valign="top">
-	<img class="pubimage" src="./pubimages/groups.png">
-	</td>
-	<td width="80%" valign="top" class="text">
-	<span class="title">The Inevitability of Ethnocentrism Revisited: Ethnocentrism Diminishes As Mobility Increases</span><br/> 
-	<b>Soham De</b>, Michele Gelfand, Dana Nau, Patrick Roos<br/>
-	Scientific Reports 2015<br/>
-	<a href="http://www.nature.com/articles/srep17963" target="_blank">paper</a> /
-	<a href="https://cmns.umd.edu/news-events/features/3350" target="_blank">press</a> /
-	<a href="javascript:unhide('scirep15bib');">bibtex</a> /
-	<a href="javascript:unhide('scirep15tldr');">tl;dr</a>
-	<div id="scirep15bib" class="hidden"><div class="bibstyle"><br/>
-@article{de2015inevitability, <br/>
-  title={The inevitability of ethnocentrism revisited: Ethnocentrism diminishes as mobility increases}, <br/>
-  author={De, Soham and Gelfand, Michele J and Nau, Dana and Roos, Patrick}, <br/>
-  journal={Scientific reports}, <br/>
-  volume={5}, <br/>
-  pages={17963}, <br/>
-  year={2015}, <br/>
-  publisher={Nature Publishing Group} <br/>
-} <br/>
-	</div></div>
-	<div id="scirep15tldr" class="hidden"><br/>
-Advances over the centuries have greatly increased the degree to which humans change physical locations. Using an evolutionary game theoretical model and archival data, we show that in highly mobile societies, one’s choice of action is more likely to depend on what individual one is interacting with, rather than the group to which the individual belongs.
-	</div>
-	<br/><br/>
-	</td>
-</tr>
-
-</tbody>
-</table> -->
-
 <hr/>
-Last Updated: October 6, 2021
+Last Updated: June 23, 2022
 
 </body>
 </html>
